@@ -1,0 +1,145 @@
+body {
+    background-color: #f1f1f1;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'nunito', sans-serif;
+}
+
+@media (min-width : 942px) {
+
+    .course-card {
+        display: inline-block;
+        text-decoration: none;
+        width: 22%;
+        height: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 5px;
+        background-color: white;
+        border-radius: 20px;
+        border-color: 0.02px solid black;
+    }
+}
+
+
+.course-card:hover {
+    background-color: #cfdbe8;
+}
+
+.course-card-img {
+    display: block;
+    width: 90%;
+    height: 160px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1.5px solid #1B2559;
+    border-radius: 15px;
+    background-size: 100%;
+    background-position: center;
+}
+
+.course-card-progress {
+    width: 30px;
+    float: right;
+    margin-right: 3%;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 10px;
+    /*background-color: #05CD99;*/
+    color: black;
+}
+
+.course-card-title {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1B2559;
+    font-family: 'josefin sans', sans-serif;
+}
+
+.course-card-details {
+    margin-left: 20px;
+    font-size: 10px;
+    color: #1B2559;
+}
+
+.course-card:hover .course-card-details {
+    color: #1B2559;
+}
+
+#all-courses-table-area {
+    margin-top: 30px;
+    display: block;
+}
+
+#all-courses-table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 94%;
+    margin: auto;
+}
+
+.buttons {
+
+    width: 100%;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.table-data {
+    font-size: 18px;
+    line-height: 5;
+    width: 98%;
+    text-align: center;
+    border-radius: 1.5px;
+}
+
+.table-data th,
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+
+#table-view {
+    cursor: pointer;
+    padding: 10px;
+    height: 35px;
+    width: 80px;
+    border: 0px solid black;
+    border-radius: 20px;
+    color: white;
+    background-color: #0352BD;
+    font-size: 10px;
+    font-family: 'nunito', sans-serif;
+    margin: 10px;
+}
+
+#table-view:hover {
+    background-color: #190793;
+}
+
+#cticket:hover {
+    background-color: #190793;
+}
+
+#cticket {
+    cursor: pointer;
+    width: 8%;
+    border: 0px solid black;
+    border-radius: 20px;
+    color: white;
+    background-color: #0352BD;
+    font-size: 10px;
+    font-family: 'nunito', sans-serif;
+    margin: 10px;
+}
+
+
+
+.table-hover:visited {
+    text-decoration: none;
+    color: red;
+}

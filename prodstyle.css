@@ -1,0 +1,79 @@
+#main-area {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-left: 10px;
+}
+
+.leave-reason {
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'nunito', sans-serif;
+    background-color: #F6F8FC;
+    border: 0px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.apply-leave-btn {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'nunito', sans-serif;
+    border: 0px solid black;
+    border-radius: 10px;
+    background-color: #4318FF;
+    color: white;
+}
+
+.apply-leave-btn:hover {
+    cursor: pointer;
+    background-color: #190793;
+}
+
+.leave-form {
+    display: block;
+    width: 330px;
+    margin: auto;
+}
+
+.leave-form label {
+    font-family: 'josefin sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.leave-form input {
+    width: 60%;
+}
+
+.assign-ticket {
+    margin: 5% 20%;
+    background-color: white;
+    padding: 30px;
+    line-height: 2;
+    border-radius: 20px;
+}
+
+.assign-ticket {
+    width: 60%;
+}
+
+#mylist {
+    padding: 20px;
+    line-height: 2;
+    margin-top: 2%;
+    margin-left: 3%;
+    background-color: white;
+    border-radius: 40px;
+    width: 90%;
+}
+
+#mylist td {
+    text-align: center;
+}

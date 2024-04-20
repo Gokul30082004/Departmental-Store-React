@@ -1,0 +1,141 @@
+body {
+    background-color: #f1f1f1;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: 'nunito', sans-serif;
+}
+
+/*mobile*/
+@media (max-width: 480px) {
+    #login-box {
+        display: block;
+        margin: auto;
+        width: 330px;
+        height: 330px;
+        transform: translateY(45%);
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .form-box-h1 {
+        padding-top: 10%;
+    }
+
+    #image-box {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) {
+    #login-box {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        position: fixed;
+        margin: auto;
+        width: 70%;
+        margin-left: 15%;
+        height: 70%;
+        margin-top: 7%;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    #form-box {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    #image-box {
+        background-image: url('https://static.wixstatic.com/media/269c5c_5f8e54e7ae7d44b8b110d8f6c1c08fbd~mv2.png/v1/fill/w_345,h_345,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/web%20designing%20why%20choose%20us.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+}
+
+.form-box-h1 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'josefin sans', sans-serif;
+    line-height: 2;
+    text-align: center;
+}
+
+.uemail {
+    width: 70%;
+    height: 38px;
+    padding: 10px;
+    margin-left: 15%;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'nunito', sans-serif;
+    background-color: #f1f1f1;
+}
+
+.upasskey {
+    width: 70%;
+    height: 38px;
+    padding: 10px;
+    margin-left: 15%;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'nunito', sans-serif;
+    background-color: #f1f1f1;
+}
+
+.eyebtn {
+    display: inline;
+    position: fixed;
+    z-index: 1;
+    padding: 5px;
+    margin-top: 7px;
+    margin-left: -35px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #0352BD;
+}
+
+.eyebtn:hover {
+    cursor: pointer;
+    color: #3B38F6;
+}
+
+.forgot-pass {
+    width: 70%;
+    height: 20px;
+    padding: 10px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-family: 'nunito', sans-serif;
+    color: #0352BD;
+}
+
+.forgot-pass:hover {
+    color: #0A20D1;
+    text-decoration: underline;
+}
+
+.login-btn {
+    padding: 5px;
+    height: 35px;
+    width: 25%;
+    margin-left: 40%;
+    border: 0px solid black;
+    border-radius: 20px;
+    color: white;
+    background-color: #0352BD;
+    font-size: 12px;
+    font-family: 'nunito', sans-serif;
+}
+
+.login-btn:hover {
+    cursor: pointer;
+    background-color: #3B38F6;
+}

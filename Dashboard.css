@@ -1,0 +1,520 @@
+.wrapper {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 94%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px 5px;
+  justify-content: space-between;
+}
+
+header .icons {
+  display: flex;
+}
+
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.icons span:last-child {
+  margin-right: -10px;
+}
+
+header .icons span:hover {
+  background: #f2f2f2;
+}
+
+header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.calendar {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  padding-inline-start: 0px;
+}
+
+.calendar .days {
+  margin-bottom: 20px;
+}
+
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+
+.calendar .days li {
+  z-index: 0;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.days li.inactive {
+  color: #aaa;
+}
+
+.days li.active {
+  color: #fff;
+}
+
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+  background: #4318FF;
+}
+
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+
+#sec2 {
+  margin-top: 12%;
+}
+
+#courses-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  width: 95%;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.total-courses {
+  background-image: linear-gradient(to right, #3B38F6, #5350F7);
+  height: 100px;
+  width: 86%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.total-courses h3 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2.5;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: white;
+}
+
+#ip-icon {
+  float: right;
+  font-size: 40px;
+  width: 26%;
+  color: #4318FF;
+}
+
+
+#instructors-list {
+  background-color: white;
+  /*			height: 63%;*/
+  width: 89%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#instructors-list h3 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.5;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: #A3AED0;
+}
+
+#instructors-list a {
+  text-decoration: none;
+  font-family: 'nunito', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 3;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px;
+  margin-top: 10px;
+  border-radius: 40px;
+  color: #4318FF;
+}
+
+#instructors-list a i {
+  padding-left: 10px;
+}
+
+#instructors-list a:hover {
+  background-color: #190793;
+  color: white;
+}
+
+.instructors-list-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.instructors-list-logo {
+  width: 10%;
+  margin-right: 0px;
+}
+
+.instructors-list-logo img {
+  width: 50px;
+  border-radius: 25px;
+  vertical-align: middle;
+}
+
+.instructors-list-title {
+  width: 75%;
+  margin-left: 0px;
+  text-align: left;
+}
+
+.instructors-list-title h4 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+  margin: 0px;
+  color: black;
+}
+
+.instructors-list-title p {
+  font-family: 'nunito', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+  margin: 0px;
+  color: #A3AED0;
+}
+
+.instructors-list-dept {
+  width: 80px;
+}
+
+.instructors-list-dept p {
+  font-family: 'nunito', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+  display: block;
+  padding-left: 0px;
+  margin: 0px;
+  color: #3B38F6;
+  width: 50px;
+  background-color: #B2CFFE;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#attendance-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  width: 95%;
+  margin-top: 10px;
+  /*			margin-left: 10px;*/
+}
+
+.total-attendance {
+  /*			background-image: linear-gradient(to right, #3B38F6, #5350F7);*/
+  background-color: white;
+  height: 100px;
+  width: 77%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.total-attendance h3 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  display: block;
+  vertical-align: middle;
+  padding-top: 8px;
+  padding-left: 5px;
+  margin: 0px;
+  color: black;
+}
+
+.total-attendance p {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 4;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: black;
+}
+
+.total-present {
+  background-color: #190793;
+  height: 100px;
+  width: 77%;
+  margin-left: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.total-present h3 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  display: block;
+  padding-top: 8px;
+  padding-left: 5px;
+  margin: 0px;
+  color: #A3AED0;
+}
+
+.total-present p {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 4;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: white;
+}
+
+
+
+.today-attendance {
+  /*			background-image: linear-gradient(to right, #3B38F6, #5350F7);*/
+  background-color: white;
+  height: 100px;
+  width: 89%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.today-attendance h3 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 3;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: black;
+}
+
+.today-attendance p {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: black;
+}
+
+.mark-att {
+  display: block;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'josefin sans', sans-serif;
+  background-color: #190793;
+  color: white;
+  border: 0px solid black;
+  border-radius: 10px;
+}
+
+.mark-att:hover {
+  cursor: pointer;
+  background-color: #4318FF;
+  color: white;
+}
+
+#leave-box {
+  background-color: white;
+  height: 75%;
+  width: 89%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#leave-box h3 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 4;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  color: #A3AED0;
+}
+
+
+#logo {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 50px;
+  width: 50px;
+  padding: 0px;
+  background-color: #CFDBE8;
+  border-radius: 10px;
+}
+
+#logo-txt {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+#logo-txt h1 {
+  border: 0px solid black;
+  display: table-row;
+  line-height: 1.5;
+  vertical-align: bottom;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'josefin sans', sans-serif;
+}
+
+#courses-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  width: 95%;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.total-tickets {
+  background-image: linear-gradient(to right, #3B38F6, #5350F7);
+  height: 100px;
+  width: 86%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.total-tickets h3 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 3.5;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: white;
+}
+
+.total-tickets p {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: white;
+}
+
+.inprogress-courses {
+  background-color: white;
+  height: 100px;
+  width: 89%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.inprogress-courses h3 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 3.5;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: #A3AED0;
+}
+
+.inprogress-courses p {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  display: block;
+  padding-left: 10px;
+  margin: 0px;
+  color: #190793;
+}
+
+.mark-att-dis {
+  display: block;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'josefin sans', sans-serif;
+  background-color: #D7D8E0;
+  color: black;
+  border: 0px solid black;
+  border-radius: 10px;
+}
+
+.mark-att-dis:hover {
+  cursor: no-drop;
+  background-color: #D7D8E0;
+}

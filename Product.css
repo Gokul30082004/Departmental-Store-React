@@ -1,0 +1,62 @@
+
+
+.table-data {
+    font-size: 18px;
+    line-height: 5;
+    width: 98%;
+    text-align: center;
+    border-radius: 1.5px;
+}
+
+.table-hover:hover {
+    color: #190793;
+}
+
+.table-hover {
+    color: #0352BD;
+}
+
+.table-data th,
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+
+.buttons {
+
+    width: 100%;
+    text-align: right;
+    margin-top: 15px;
+}
+
+#cticket:hover {
+    background-color: #190793;
+}
+
+#cticket {
+    width: 8%;
+    border: 0px solid black;
+    border-radius: 20px;
+    color: white;
+    background-color: #0352BD;
+    font-size: 10px;
+    font-family: 'nunito', sans-serif;
+    margin: 10px;
+}
+
+#all-courses-main-area {
+    margin-left: 30px;
+}
+
+#search-btn {
+    height: 30px;
+    padding: 3px;
+    padding-left: 50px;
+    font-size: 14px;
+    color: #1C1D21;
+    border-radius: 20px;
+    display: block;
+    margin-left: 50px;
+    width: 15%;
+    margin-top: 20px;
+}
